@@ -1,0 +1,96 @@
+@media(max-width: 1300px){
+    .rank{
+        min-width: 7rem;
+    }
+}
+
+
+@media(max-width: 800px){
+    h1{
+        font-size: 2.5rem;
+    }
+    
+    h2{
+        font-size: 1.7rem;
+    }
+    
+    h3{
+        font-size: 1.3rem;
+    }
+    /* .player-points h3:before{
+        width: 0.5rem;
+    } */
+}
+
+@media(max-width: 680px){
+    h1{
+        font-size: 2rem;
+    }
+
+    .rank{
+        min-width: 5rem;
+    }
+
+}
+
+@media(max-width: 640px){
+    h2{
+        font-size: 1.5rem;
+    }
+    
+    h3{
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 550px){
+    h1{
+        font-size: 1.7rem;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+    
+    h3{
+        font-size: 1rem;
+    }
+     
+    .player-points{
+        min-width: 120px;
+    }
+    .player-name{
+        margin-right: 0.7rem;
+    }
+}
+
+@media(max-width: 480px){
+    h1{
+        font-size: 1.4rem;
+    }
+
+    .rank h1{
+        font-size: 1.7rem;
+    }
+    h2{
+        font-size: 1.1rem;
+    }  
+    h3{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 390px){
+    h1{
+        font-size: 1.25rem;
+    }
+
+    .rank h1{
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 0.95rem;
+    }  
+    h3{
+        font-size: 0.8rem;
+    }
+}

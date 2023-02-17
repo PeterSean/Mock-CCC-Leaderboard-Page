@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+::-webkit-scrollbar{width:0;}
+
+:root {
+    --back-gray: #D9DAE5;
+    --dark-gray: #353535;
+    --darker-gray: #1A1A1A;
+    --light-gray: #A8A8A8;
+    --lighter-gray: #f8f8f8;
+    --accent: #2998FF;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+
+body{
+    background-color: var(--back-gray);
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 1.8rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+.outer-card{
+    background-color: white;
+    position: absolute;
+    width: 90vw;
+    height: 90vh;
+    border-radius: 50px;
+    -webkit-box-shadow: 6px 6px 10px -6px rgba(0,0,0,0.67); 
+    box-shadow: 6px 6px 10px -6px rgba(0,0,0,0.4);
+    overflow: auto;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title h1{
+    color: var(--darker-gray);
+    margin-top: 1.7rem;
+}
+
+.title h3{
+    color: var(--light-gray);
+    margin-bottom: 1rem;
+}
+
+.mode{
+    margin-bottom: 1rem;
+    margin-right: 4%;
+    text-align: right;
+    color: var(--accent);
+}
+
+.mode button{
+    all: unset;
+    cursor: pointer;
+}
+
+.mode h3:after{
+    content: url("images/drop down.png");
+    position: relative;
+    right: -6px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 4%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    text-align: left;
+  }
+  
+  .mode button:focus + .dropdown-content {
+    display: block;
+  }
+
+
+
+.leaderboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ranking-info:nth-child(2) .rank{
+    background-image: url(images/Medal1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+
+    background-size: auto 140%;
+}
+
+.ranking-info:nth-child(3) .rank{
+    background-image: url(images/Medal2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+
+    background-size: auto 140%;
+}
+
+.ranking-info:nth-child(4) .rank{
+    background-image: url(images/Medal3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+
+    background-size: auto 140%;
+}
+
+.ranking-info{
+    background-color: var(--lighter-gray);
+    display: flex;
+    margin-bottom: 15px;
+    width: 92%;
+    height: 6rem;
+    border-radius: 12px;
+    -webkit-box-shadow: 6px 6px 10px -6px rgba(0,0,0,0.67); 
+    box-shadow: 6px 6px 10px -6px rgba(0,0,0,0.4);
+}
+
+.rank{
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+
+    color: var(--light-gray);
+    font-size: 3rem;
+    margin: auto;
+    min-width: 5rem;
+}
+
+.player-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 10;
+}
+
+.player-name{
+    margin-right: 1.6rem;
+}
+
+.player-points{
+    margin-right: 2rem;
+}
+
+.player-points h3{
+    color: var(--light-gray);
+    text-align: right;
+}
+
+    
+.player-points h3::before{
+    content: url(images/PointSymbol.png);
+    align-items: center;
+    position: relative;
+    top: 0.4rem;
+    left: -0.4rem;
+    width: 100px;
+}
+
+.add-title{
+    align-items: center;
+}
+
+input{
+    height: 3em;
+    width: 20em;
+    border-radius: 12px;
+    margin: 1em;
+    text-align: center;
+    font-size: 1em;  
+}
+
+.test{
+    align-items: center;
+}
+
+button{
+    justify-content: center;
+    border-radius: 5px;
+    width: 10em;
+    padding: 1em;
+    margin: 1em;
+    font-size: 1em;
+}
+
+
